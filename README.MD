@@ -8,7 +8,7 @@
 - Run icon-font-generator (https://www.npmjs.com/package/icon-font-generator): `icon-font-generator icon-svg-files/*.svg -o icon-font -n ibm-icons -p ibm-icon -t span --normalize true --height 128 --html false -j false --types 'woff2'`
     - For web use WOFF, for mobile app (i.e. ionic) use WOFF2
 - In ibm-icons.css, add the following properties:
-```
+```css
 span[class^="ibm-icon-"]:before, span[class*=" ibm-icon-"]:before {
     display: flex;
     justify-content: center;
@@ -21,6 +21,6 @@ span[class^="ibm-icon-"]:before, span[class*=" ibm-icon-"]:before {
 - Move the icon-font folder to your project
 - Import it into your main SCSS file
 - use the icons as follows, replacing whatever is after ibm-icon- with the icon name (use the css file for reference):
-```
+```html
 <span class="ibm-icon-info"></span>
 ```
