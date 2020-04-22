@@ -12,7 +12,8 @@ for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower
 ```
 icon-font-generator icon-svg-files/*.svg -o icon-font -n ibm-icons -p ibm-icon -t span --normalize true --height 128 --html false -j false --types 'woff2'
 ```
-    - For web use WOFF, for mobile app (i.e. ionic) use WOFF2
+- For web use WOFF, for mobile app (i.e. ionic) use WOFF2
+
 - In ibm-icons.css, add the following properties:
 ```css
 span[class^="ibm-icon-"]:before, span[class*=" ibm-icon-"]:before {
