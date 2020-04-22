@@ -1,7 +1,7 @@
 # Instructions
 
 ## How to build
-- Export IBM Carbon Icons from Figma file
+- Export IBM Carbon Icons from the [Figma file](https://www.figma.com/file/YxzqZzimoylCVlqCKAdOsy/IBM-Carbon-Icons?node-id=0%3A1)
 - Search SVG files in Finder and move them all to a single folder named "icon-svg-files" within your project file
 - Rename them all to lowercase using `for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "\`echo $f | tr "[:upper:]" "[:lower:]"\`"; done`
 - Create an empty folder called "icon-font"
